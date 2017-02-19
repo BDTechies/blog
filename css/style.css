@@ -128,8 +128,12 @@ header {
 }
 
 footer {
-  background: #222;
+  background: #3c3741;
   text-align: center;
+}
+
+.mdl-mega-footer {
+  background: #3c3741;
 }
 
 footer p {
