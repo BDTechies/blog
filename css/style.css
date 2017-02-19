@@ -35,6 +35,12 @@ p {
   align-content: center;
 }
 
+.sec-header {
+  text-align: center;
+  padding: .5em 0;
+  background: #e7e7e7;
+}
+
 /*=== Header Style ===*/
 .mdl-layout__drawer-button {
   color: #e7e7e7;

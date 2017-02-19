@@ -40,6 +40,13 @@ p {
   justify-content: center;
   align-content: center;
 }
+
+.sec-header {
+  text-align: center;
+  padding: .5em 0;
+  background: $white;
+}
+
 /*=== Header Style ===*/
 
 .mdl-layout__drawer-button {
