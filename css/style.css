@@ -131,3 +131,8 @@ footer {
   background: #222;
   text-align: center;
 }
+
+footer p {
+  padding: 0;
+  margin: 0;
+}
