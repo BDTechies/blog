@@ -1,6 +1,12 @@
-@import url("https://cdn.rawgit.com/musafirshahid/bangla-web-fonts/charukola-reguler-unicode/stylesheet.css");
-@import url("https://cdn.rawgit.com/musafirshahid/bangla-web-fonts/ekushey-lohit/stylesheet.css");
+@import url('https://cdn.rawgit.com/musafirshahid/bangla-web-fonts/charukola-reguler-unicode/stylesheet.css');
+@import url('https://cdn.rawgit.com/musafirshahid/bangla-web-fonts/ekushey-lohit/stylesheet.css');
+
 /*=== Vars ===*/
+$charukola: 'Charukola Unicode', sans-serif;
+$lohit: 'Ekushey Lohit', sans-serif;
+$white: #e7e7e7;
+$dark-gray: #222;
+$light-gray: #d4d4d4;
 /*=== Common Style ===*/
 * {
   margin: 0;
@@ -10,11 +16,11 @@
 
 body {
   font-size: 1em;
-  background: #d4d4d4;
+  background: $light-gray;
 }
 
 p, h1, h2, h3, h4 {
-  font-family: "Ekushey Lohit", sans-serif;
+  font-family: $lohit;
   margin: 0;
   padding: 0;
 }
@@ -34,26 +40,26 @@ p {
   justify-content: center;
   align-content: center;
 }
-
 /*=== Header Style ===*/
+
 .mdl-layout__drawer-button {
-  color: #e7e7e7;
+  color: $white;
 }
 
 header {
   min-height: 50vh;
   text-align: center;
-  background-color: #222;
-  background-image: url("/prozuktischool/img/bg.jpg");
+  background-color: $dark-gray;
+  background-image: url('/prozuktischool/img/bg.jpg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  color: #e7e7e7;
+  color: $white;
 }
 
 .title {
-  font-family: "Charukola Unicode", sans-serif;
+  font-family: $charukola;
   margin-bottom: 0.5em;
 }
 
