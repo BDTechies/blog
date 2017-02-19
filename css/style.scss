@@ -17,6 +17,7 @@ $light-gray: #d4d4d4;
 body {
   font-size: 1em;
   background: $light-gray;
+  color: #707c80;
 }
 
 p, h1, h2, h3, h4 {
@@ -45,6 +46,11 @@ p {
   text-align: center;
   padding: .5em 0;
   background: $white;
+}
+
+.mdl-card {
+  width: auto;
+  padding: 8px;
 }
 
 /*=== Header Style ===*/
@@ -78,4 +84,60 @@ header {
 
 .course-cover svg {
   width: 5em;
+}
+
+/*=== Post ===*/
+
+.post-meta {
+  background: $white;
+  padding: 8px;
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+.post-meta span {
+  color: green;
+}
+
+.post-meta .devider {
+  margin: 0 .5em;
+  color: $dark-gray;
+}
+
+.article-tag-list {
+  list-style: none;
+  display: inline;
+}
+
+.article-tag-list li {
+  display: inline;
+  margin-right: 0.5em;
+}
+
+.article-tag-list li a {
+  font-size: 1.2em;
+}
+
+.article-tag-list li::after {
+  content: ',';
+}
+
+.article-tag-list li:last-child {
+  margin-right: 0;
+}
+
+.article-tag-list li:last-child::after {
+  content: '';
+}
+
+.post-container {
+  min-height: 50vh;
+}
+
+footer {
+  background: $dark-gray;
+  color: $white;
+  text-align: center;
+  padding: 0.3em 0;
 }
