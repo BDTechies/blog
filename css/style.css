@@ -61,9 +61,10 @@ header {
 .course-cover {
   text-align: center;
   width: auto;
-  height: 250px;
+  height: auto;
+  padding: 5em 0;
 }
 
 .course-cover svg {
-  width: 50%;
+  width: 5em;
 }
