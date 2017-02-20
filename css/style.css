@@ -10,7 +10,7 @@
 
 body {
   font-size: 1em;
-  background: #d4d4d4;
+  background: #D2D7D3;
   color: #707c80;
 }
 
@@ -39,7 +39,8 @@ p {
 .sec-header {
   text-align: center;
   padding: .5em 0;
-  background: #e7e7e7;
+  background: #3c3741;
+  color: #fff;
 }
 
 .mdl-card {
@@ -49,7 +50,7 @@ p {
 
 /*=== Header Style ===*/
 .mdl-layout__drawer-button {
-  color: #e7e7e7;
+  color: #fff;
 }
 
 header {
@@ -61,7 +62,7 @@ header {
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  color: #e7e7e7;
+  color: #fff;
 }
 
 .title {
@@ -76,13 +77,14 @@ header {
 }
 
 .course-cover svg {
-  width: 5em;
+  width: 8em;
+  min-height: 300px;
 }
 
 /*=== Post ===*/
 .post-meta {
-  background: #e7e7e7;
-  padding: 8px;
+  background: #fff;
+  padding: 16px;
   text-align: center;
   font-size: 1.2em;
   line-height: 1.5em;
@@ -125,6 +127,9 @@ header {
 
 .post-container {
   min-height: 50vh;
+  background: #fff;
+  padding: 16px;
+  text-align: justify;
 }
 
 footer {
@@ -132,8 +137,13 @@ footer {
   text-align: center;
 }
 
+footer .mdl-grid {
+  padding: 0;
+}
+
 .mdl-mega-footer {
   background: #3c3741;
+  padding: 0;
 }
 
 footer p {
