@@ -109,6 +109,15 @@ header {
   margin-bottom: 0.5em;
 }
 
+.mdl-layout-title {
+  font-family: $charukola;
+}
+
+.mdl-navigation__link {
+  font-family: $lohit;
+  font-size: 1.3em;
+}
+
 /*=== Course Home ===*/
 .course-cover {
   text-align: center;
@@ -134,8 +143,11 @@ header {
   color: green;
 }
 
-.post-meta .devider {
+.devider {
   margin: 0 .5em;
+}
+
+.post-meta .devider {
   color: $dark-gray;
 }
 
@@ -172,8 +184,36 @@ header {
   text-align: justify;
 }
 
-footer {
+.post-container p {
+  margin-bottom: 1.5em;
+}
+
+.post-container p:last-child {
+  margin-bottom: 0;
+}
+
+.post-container h4 {
+  color: #1DABB8;
+  margin-bottom: 0.5em;
+}
+
+.sidebar-container {
+  background: #fff;
+  margin-bottom: 16px;
+}
+
+.sidebar-header {
   background: #3c3741;
+  color: #fff;
+  text-align: center;
+  padding: 0.5em 0;
+}
+
+.sidebar-content {
+  padding: 16px;
+}
+
+footer {
   text-align: center;
 }
 
@@ -184,9 +224,22 @@ footer .mdl-grid {
 .mdl-mega-footer {
   background: #3c3741;
   padding: 0;
+  color: #fff;
 }
 
 footer p {
-  padding: 0;
+  font-size: 1em;
+  padding: 0.3em 0;
   margin: 0;
+}
+
+footer p a {
+  color: orange;
+  margin-left: 0.3em;
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    padding-left: 0;
+  }
 }
