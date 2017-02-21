@@ -213,6 +213,28 @@ header {
   padding: 16px;
 }
 
+.archive-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.archive-list li::before {
+  content: '✔ ';
+}
+
+.archive-list-count {
+  margin: 0 .3em;
+}
+
+.archive-list-count::before {
+  content: '(';
+}
+
+.archive-list-count::after {
+  content: ' টি লেখা)';
+}
+
 footer {
   text-align: center;
 }
