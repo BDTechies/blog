@@ -181,6 +181,12 @@ a {
   border-radius: 0;
 }
 
+.postComment {
+  background: #fff;
+  margin-top: 16px;
+  padding: 16px;
+}
+
 .sidebarContainer .sidebarWidget {
   background: #fff;
   margin-bottom: 16px;
