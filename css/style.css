@@ -1,33 +1,11 @@
-@charset "UTF-8";
+@import url("https://cdn.rawgit.com/musafirshahid/bangla-web-fonts/solaimanlipi/stylesheet.css");
 @import url("https://cdn.rawgit.com/musafirshahid/bangla-web-fonts/charukola-reguler-unicode/stylesheet.css");
-@import url("https://cdn.rawgit.com/musafirshahid/bangla-web-fonts/ekushey-lohit/stylesheet.css");
-/*=== Vars ===*/
-/*=== Common Style ===*/
+/*--- variables ---*/
+/*--- common ---*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
-  font-size: 1em;
-  background: #D2D7D3;
-  color: #707c80;
-}
-
-p, h1, h2, h3, h4 {
-  font-family: "Ekushey Lohit", sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-p {
-  font-size: 1.4em;
-  line-height: 1.7em;
-}
-
-* a {
-  text-decoration: none;
 }
 
 .flex {
@@ -37,224 +15,248 @@ p {
   align-content: center;
 }
 
-.sec-header {
-  text-align: center;
-  padding: .5em 0;
+body {
+  font-family: "SolaimanLipi", sans-serif;
+  font-size: 14px;
+  background: #e7e7e7;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*--- header ---*/
+.mdl-layout__header {
+  box-shadow: none;
+}
+
+.header {
   background: #3c3741;
+  background-image: url(../img/bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 50vh;
+  min-height: 50vh;
+  color: #fff;
+  text-align: center;
+}
+
+.header h1, .header h2, .header h3,
+.header h4, .header h5, .header h6 {
+  font-family: "Charukola Unicode", sans-serif;
+  font-weight: 400;
+}
+
+.header a {
   color: #fff;
 }
 
-.tag {
+.header a:hover {
+  color: #ff5252;
+}
+
+.mdl-layout__header .mdl-layout__drawer-button {
+  background: none;
+}
+
+.sectionHeader {
+  color: #fff;
+  border: 1px solid #ccc;
+}
+
+.sectionHeader h4 {
+  margin: 0;
+  padding: 8px 0;
   background: #fff;
 }
 
-.mdl-card {
-  width: auto;
+.sectionHeader h4 span {
+  background: #2296f3;
+  padding: 8px 1em;
+}
+
+.courseContainer {
+  min-height: 300px;
+  background: #fff;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.courseContainer a {
+  width: 100%;
+  height: 100%;
+  line-height: 300px;
+}
+
+.courseContainer a svg {
+  width: 120px;
+}
+
+.postSummery {
+  border: 1px solid #ccc;
+}
+
+.postContainer {
+  min-height: 500px;
+}
+
+.postContainer .postMeta .postTitle {
+  color: #2296f3;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.postContainer .postMeta .postInfo {
+  background: #fff;
+  border: 1px solid #ccc;
+  margin-bottom: 16px;
+  text-align: center;
   padding: 8px;
 }
 
-.social-net {
-  background: #fff;
-  margin: 2em auto;
-  text-align: center;
-  padding: 0.5em 0;
+.postContainer .postMeta .postInfo p {
+  display: inline;
+  margin: 0;
+  padding: 8px;
+  padding-right: 0;
 }
 
-.social-net ul {
+.postContainer .postMeta .postInfo .devider {
+  margin: 0 .3em;
+}
+
+.postContainer .postMeta .postInfo .postTags {
   list-style: none;
+  display: inline;
   margin: 0;
   padding: 0;
 }
 
-.social-net ul li {
-  display: inline-block;
-  padding: 1.5em 0;
-  margin-right: 1em;
-}
-
-.social-net ul li:last-child {
-  margin-right: 0;
-}
-
-.social-net ul li a {
-  font-size: 2em;
-  color: gray;
-}
-
-/*=== Header Style ===*/
-.mdl-layout__drawer-button {
-  color: #fff;
-}
-
-header {
-  min-height: 50vh;
-  text-align: center;
-  background-color: #222;
-  background-image: url("/prozuktischool/img/bg.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: #fff;
-}
-
-.title {
-  font-family: "Charukola Unicode", sans-serif;
-  margin-bottom: 0.5em;
-}
-
-.mdl-layout-title {
-  font-family: "Charukola Unicode", sans-serif;
-}
-
-.mdl-navigation__link {
-  font-family: "Ekushey Lohit", sans-serif;
-  font-size: 1.3em;
-}
-
-/*=== Course Home ===*/
-.course-cover {
-  text-align: center;
-  width: auto;
-}
-
-.course-cover svg {
-  width: 8em;
-  min-height: 300px;
-}
-
-/*=== Post ===*/
-.post-meta {
-  background: #fff;
-  padding: 16px;
-  text-align: center;
-  font-size: 1.2em;
-  line-height: 1.5em;
-}
-
-.post-meta span {
-  color: #1DABB8;
-}
-
-.devider {
-  margin: 0 .5em;
-}
-
-.post-meta .devider {
-  color: #222;
-}
-
-.article-tag-list {
-  list-style: none;
+.postContainer .postMeta .postInfo .postTags li {
   display: inline;
 }
 
-.article-tag-list li {
-  display: inline;
-  margin-right: 0.5em;
-}
-
-.article-tag-list li a {
-  font-size: 1.2em;
-}
-
-.article-tag-list li::after {
+.postContainer .postMeta .postInfo .postTags li::after {
   content: ',';
 }
 
-.article-tag-list li:last-child {
-  margin-right: 0;
-}
-
-.article-tag-list li:last-child::after {
+.postContainer .postMeta .postInfo .postTags li:last-child::after {
   content: '';
 }
 
-.post-container {
-  min-height: 50vh;
+.postContainer .postBody {
   background: #fff;
+  border: 1px solid #ccc;
   padding: 16px;
   text-align: justify;
 }
 
-.post-container p {
-  margin-bottom: 1.5em;
+.postContainer .postBody p {
+  font-size: 1.4em;
+  line-height: 1.7em;
+  margin-bottom: 1em;
 }
 
-.post-container p:last-child {
+.postContainer .postBody p:last-child {
   margin-bottom: 0;
 }
 
-.post-container h4 {
+.postContainer .postBody h4 {
   color: #1DABB8;
-  margin-bottom: 0.5em;
 }
 
-.sidebar-container {
+.postShare {
+  margin-top: 16px;
+  background: #fff;
+  padding: 8px 4px;
+}
+
+.postShare .rrssb-buttons li {
+  padding: 0 4px;
+}
+
+.postShare .rrssb-buttons li a {
+  border-radius: 0;
+}
+
+.sidebarContainer .sidebarWidget {
   background: #fff;
   margin-bottom: 16px;
 }
 
-.sidebar-header {
-  background: #3c3741;
+.sidebarContainer .sidebarWidget .widgetTitle {
+  background: #2296f3;
   color: #fff;
+}
+
+.sidebarContainer .sidebarWidget .widgetTitle h4 {
+  margin: 0;
+  padding: 0.4em 0.3em;
   text-align: center;
-  padding: 0.5em 0;
 }
 
-.sidebar-content {
-  padding: 16px;
+.sidebarContainer .sidebarWidget .widgetContent {
+  padding: 8px;
+  border: 1px solid #ccc;
 }
 
-.archive-list {
+.sidebarContainer .sidebarWidget:last-child {
+  margin-bottom: 0;
+}
+
+.socialLinks {
   list-style: none;
   margin: 0;
-  padding: 0;
-}
-
-.archive-list li::before {
-  content: '✔ ';
-}
-
-.archive-list-count {
-  margin: 0 .3em;
-}
-
-.archive-list-count::before {
-  content: '(';
-}
-
-.archive-list-count::after {
-  content: ' টি লেখা)';
-}
-
-footer {
+  padding: 0.5em 0;
   text-align: center;
 }
 
-footer .mdl-grid {
-  padding: 0;
+.socialLinks li {
+  text-align: center;
+  display: inline-block;
+  margin-right: 1em;
 }
 
-.mdl-mega-footer {
+.socialLinks li:last-child {
+  margin-right: 0;
+}
+
+.socialLinks li a {
+  font-size: 1.5em;
+}
+
+.archive {
+  list-style: none;
+  padding: 8px;
+}
+
+.archive li {
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.archive li .fa {
+  margin-right: .7em;
+}
+
+.archive li:last-child {
+  margin-bottom: 0;
+}
+
+.footer {
+  text-align: center;
   background: #3c3741;
-  padding: 0;
   color: #fff;
 }
 
-footer p {
-  font-size: 1em;
-  padding: 0.3em 0;
+.footer p {
+  font-size: 1.3em;
   margin: 0;
+  padding: 0.7em 0;
 }
 
-footer p a {
-  color: orange;
-  margin-left: 0.3em;
-}
-
-@media (min-width: 768px) {
-  .sidebar {
-    padding-left: 0;
-  }
+.footer .devider {
+  margin: 0 0.2em;
 }
