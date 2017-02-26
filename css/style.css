@@ -171,6 +171,7 @@ a {
   margin-top: 16px;
   background: #fff;
   padding: 8px 4px;
+  border: 1px solid #ccc;
 }
 
 .postShare .rrssb-buttons li {
@@ -185,6 +186,7 @@ a {
   background: #fff;
   margin-top: 16px;
   padding: 16px;
+  border: 1px solid #ccc;
 }
 
 .sidebarContainer .sidebarWidget {
