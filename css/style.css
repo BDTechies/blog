@@ -135,6 +135,7 @@ a {
 }
 
 .postContainer .postMeta .postInfo .postTags li {
+  margin-right: 0.3em;
   display: inline;
 }
 
@@ -143,6 +144,7 @@ a {
 }
 
 .postContainer .postMeta .postInfo .postTags li:last-child::after {
+  margin-right: 0;
   content: '';
 }
 
