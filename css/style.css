@@ -1,5 +1,6 @@
 @import url("https://cdn.rawgit.com/musafirshahid/bangla-web-fonts/solaimanlipi/stylesheet.css");
 @import url("https://cdn.rawgit.com/musafirshahid/bangla-web-fonts/charukola-reguler-unicode/stylesheet.css");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
 /*--- variables ---*/
 /*--- common ---*/
 * {
@@ -16,13 +17,27 @@
 }
 
 body {
-  font-family: "SolaimanLipi", sans-serif;
+  font-family: "SolaimanLipi", "Ubuntu", sans-serif;
   font-size: 14px;
   background: #e7e7e7;
 }
 
+h1, h2, h3,
+h4, h5, h6 {
+  font-family: "SolaimanLipi", "Ubuntu", sans-serif;
+}
+
 a {
   text-decoration: none;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mdl-card__title {
+  display: block;
 }
 
 /*--- header ---*/
