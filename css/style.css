@@ -40,6 +40,10 @@ main {
   display: block;
 }
 
+pre[class*="language-"] {
+  border-radius: 0;
+}
+
 /*--- header ---*/
 .mdl-layout__header {
   box-shadow: none;
