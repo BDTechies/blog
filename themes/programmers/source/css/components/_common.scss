@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $primary-font;
+  background: $primary-color-light;
+  color: $primary-color-dark;
+}
+
+* a, a {
+  color: $primary-color-highlight;
+  text-decoration: none;
+}
