@@ -5,9 +5,9 @@ menu:
 rss: /atom.xml
 
 # Content
-excerpt_link: Read More
+excerpt_link: বিস্তারিত পড়ুন
 fancybox: true
-
+subtitle: শিখতে চাই, তাই শেখাই :)
 # Sidebar
 sidebar: right
 widgets:

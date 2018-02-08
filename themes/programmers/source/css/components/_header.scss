@@ -1,0 +1,12 @@
+header {
+  padding-right: 32px;
+  #header-outer {
+    text-align: right;
+    #logo-wrap, #subtitle-wrap {
+      margin: 0 0 8px 0;
+    }
+    #subtitle-wrap {
+      color: $primary-color-light;
+    }
+  }
+}

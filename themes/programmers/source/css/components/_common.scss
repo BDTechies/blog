@@ -5,12 +5,34 @@
 }
 
 body {
-  font-family: $primary-font;
-  background: $primary-color-light;
-  color: $primary-color-dark;
+  font-family: $primary-font-bn, $primary-font-en, sans-serif;
+  background: $primary-color-dark;
+  font-size: 16px;
+  p {
+    font-size: 16px;
+  }
 }
 
 * a, a {
   color: $primary-color-highlight;
   text-decoration: none;
+}
+
+/*
+=headerFontSize
+ */
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem }
+h4 { font-size: 1.4rem }
+h5 { font-size: 1.2rem }
+h6 { font-size: 1rem; }
+
+.main-wrapper {
+  margin-top: 100px;
+  .main-container {
+    background: $primary-color-light;
+    padding: 16px;
+  }
 }
