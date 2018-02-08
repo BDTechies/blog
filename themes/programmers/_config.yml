@@ -8,7 +8,7 @@ rss: /atom.xml
 excerpt_link: বিস্তারিত পড়ুন
 subtitle: শিখতে চাই, তাই শেখাই :)
 # Sidebar
-sidebar: right
+sidebar: false
 widgets:
 - category
 - tag
