@@ -13,8 +13,8 @@ timezone: Asia/Dhaka
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://shahids.me/hexo-themes
-root: /hexo-themes
+url: http://prozuktischool.com
+root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
@@ -79,7 +79,7 @@ theme: programmers
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/sh4hids/hexo-themes.git
+  repo: https://github.com/bdTechies/prozuktischool.git
   branch: gh-pages
   message: "Blog updated..."
 

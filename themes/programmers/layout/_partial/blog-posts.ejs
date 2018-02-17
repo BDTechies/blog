@@ -34,7 +34,7 @@
       <% } %>
     </div>
     <footer class="article-footer">
-      <div class="mdl-grid mdl-grid--nesting article-meta">
+      <div class="mdl-grid mdl-grid--nesting">
         <div class="mdl-cell--6-col">
           <%- partial('post/category') %>
         </div>
@@ -47,9 +47,11 @@
 </article>
 
 <% if (!index && post.comments && config.disqus_shortname){ %>
-<section id="comments">
-  <div id="disqus_thread">
-    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<div class="mdl-grid post-comment">
+  <div class="mdl-cell--12-col">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
   </div>
-</section>
+</div>
 <% } %>

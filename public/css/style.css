@@ -176,6 +176,10 @@ h6 {
   .main-container .article.article-blog .article-nav .article-nav-title span {
     position: relative;
     top: -6px; }
+  .main-container .article.article-blog .article-nav .post-prev {
+    text-align: left; }
+  .main-container .article.article-blog .article-nav .post-next {
+    text-align: right; }
 
 #footer p {
   margin: 0;
