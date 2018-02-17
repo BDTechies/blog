@@ -25,5 +25,11 @@
   }
 }
 
+.post-comment {
+  background: $primary-color-light;
+  padding: 16px;
+  margin-top: 32px;
+}
+
 @import "_home-posts";
 @import "_blog-posts";

@@ -128,6 +128,11 @@ h6 {
   .main-container .article.card:last-child {
     margin-bottom: 0; }
 
+.main-container .post-comment {
+  background: #fafafa;
+  padding: 16px;
+  margin-top: 32px; }
+
 .main-container .article.article-home .mdl-grid.mdl-grid--nesting {
   margin-bottom: 0; }
 
@@ -184,11 +189,6 @@ h6 {
     text-align: left; }
   .main-container .article.article-blog .article-nav .post-next {
     text-align: right; }
-
-.main-container .post-comment {
-  background: #fafafa;
-  padding: 16px;
-  margin-top: 32px; }
 
 #footer p {
   margin: 0;
