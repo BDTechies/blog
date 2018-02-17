@@ -20,7 +20,14 @@
     }
   }
 
-  @import "_code-highlight";
+  .article-entry {
+    margin-top: 16px;
+    text-align: justify;
+    h3 {
+      margin: 0;
+    }
+    @import "_code-highlight";
+  }
   @import "_article-nav";
 }
 
