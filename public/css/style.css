@@ -45,6 +45,10 @@ h6 {
   background-size: cover;
   background-attachment: fixed; }
 
+@media all and (min-width: 0) and (max-width: 480px) {
+  .mdl-layout--fixed-drawer {
+    background: #fafafa; } }
+
 .mdl-layout__drawer {
   background: none;
   border-right: none;
@@ -77,7 +81,11 @@ h6 {
   .mdl-layout__drawer {
     background: rgba(27, 43, 52, 0.9);
     padding-right: 24px;
-    padding-top: 0; } }
+    padding-top: 30px; }
+  .mdl-layout__drawer-button {
+    color: #7cb342; }
+    .mdl-layout__drawer-button:focus {
+      outline: none; } }
 
 .mdl-layout__content {
   padding-top: 100px; }
