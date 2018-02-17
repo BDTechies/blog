@@ -1,0 +1,38 @@
+.archives-wrap {
+  background: $primary-color-light;
+  padding: 16px;
+  margin-bottom: 16px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  .archive-article-header {
+    .published-date {
+      i {
+        color: rgba($primary-color-dark, 0.5);
+      }
+    }
+    .archive-article-date,
+    .archive-article-title {
+      position: relative;
+      top: -5px;
+    }
+    h1 {
+      margin: 0;
+      margin-bottom: 16px;
+      padding-top: 8px;
+      font-size: 1.2rem;
+      padding-left: 32px;
+      i {
+        margin-right: 4px;
+        font-size: 1.6rem;
+        color: rgba($primary-color-dark, 0.3);
+      }
+    }
+  }
+  .archive-year-wrap {
+    font-size: 1.6rem;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid rgba($primary-color-highlight, 0.3);
+  }
+}

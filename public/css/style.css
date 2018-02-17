@@ -11,7 +11,8 @@ body {
   body p {
     font-size: 16px; }
 
-* a, a {
+* a,
+a {
   color: #7cb342;
   text-decoration: none; }
 
@@ -47,7 +48,9 @@ h6 {
 
 @media all and (min-width: 0) and (max-width: 480px) {
   .mdl-layout--fixed-drawer {
-    background: #fafafa; } }
+    background: #1B2B34; }
+  .hidden-mobile {
+    display: none; } }
 
 .mdl-layout__drawer {
   background: none;
@@ -196,6 +199,34 @@ h6 {
     text-align: left; }
   .main-container .article.article-blog .article-nav .post-next {
     text-align: right; }
+
+.main-container .archives-wrap {
+  background: #fafafa;
+  padding: 16px;
+  margin-bottom: 16px; }
+  .main-container .archives-wrap:last-child {
+    margin-bottom: 0; }
+  .main-container .archives-wrap .archive-article-header .published-date i {
+    color: rgba(27, 43, 52, 0.5); }
+  .main-container .archives-wrap .archive-article-header .archive-article-date,
+  .main-container .archives-wrap .archive-article-header .archive-article-title {
+    position: relative;
+    top: -5px; }
+  .main-container .archives-wrap .archive-article-header h1 {
+    margin: 0;
+    margin-bottom: 16px;
+    padding-top: 8px;
+    font-size: 1.2rem;
+    padding-left: 32px; }
+    .main-container .archives-wrap .archive-article-header h1 i {
+      margin-right: 4px;
+      font-size: 1.6rem;
+      color: rgba(27, 43, 52, 0.3); }
+  .main-container .archives-wrap .archive-year-wrap {
+    font-size: 1.6rem;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid rgba(124, 179, 66, 0.3); }
 
 @media all and (min-width: 0) and (max-width: 1024px) {
   .mdl-layout__content {

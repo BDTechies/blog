@@ -5,6 +5,9 @@
 <% } else if (post.title){ %>
   <% if (index){ %>
     <h1 itemprop="name">
+      <% if (class_name === 'archive-article-title') { %>
+        <i class="material-icons">assignment</i>
+      <% } %>
       <a class="<%= class_name %>" href="<%- url_for(post.path) %>"><%= post.title %></a>
     </h1>
   <% } else { %>
