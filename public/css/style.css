@@ -88,8 +88,7 @@ h6 {
   background: #fafafa; }
 
 .main-container .mdl-grid.mdl-grid--nesting {
-  margin: 0 -8px;
-  margin-bottom: 16px; }
+  margin: 0 -8px; }
 
 .main-container .course-card {
   height: 200px; }
@@ -165,10 +164,15 @@ h6 {
     color: rgba(27, 43, 52, 0.5);
     margin-right: 4px; }
 
-.main-container .article.article-blog pre {
-  border-radius: 3px; }
-  .main-container .article.article-blog pre code {
-    font-family: "Fira Mono", monospace; }
+.main-container .article.article-blog .article-entry {
+  margin-top: 16px;
+  text-align: justify; }
+  .main-container .article.article-blog .article-entry h3 {
+    margin: 0; }
+  .main-container .article.article-blog .article-entry pre {
+    border-radius: 3px; }
+    .main-container .article.article-blog .article-entry pre code {
+      font-family: "Fira Mono", monospace; }
 
 .main-container .article.article-blog .article-nav {
   margin-bottom: 0;
@@ -180,6 +184,11 @@ h6 {
     text-align: left; }
   .main-container .article.article-blog .article-nav .post-next {
     text-align: right; }
+
+.main-container .post-comment {
+  background: #fafafa;
+  padding: 16px;
+  margin-top: 32px; }
 
 #footer p {
   margin: 0;
