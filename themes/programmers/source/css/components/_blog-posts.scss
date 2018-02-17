@@ -1,0 +1,25 @@
+.article.article-blog {
+  .article-header {
+    h1 {
+      margin: 0;
+      padding: 0;
+      margin-bottom: 4px;
+      padding-bottom: 4px;
+      font-size: 1.6rem;
+    }
+  }
+  .article-meta {
+    font-size: 1rem;
+    padding-bottom: 4px;
+    border-bottom: 1px solid rgba($primary-color-highlight, 0.1);
+    border-top: 1px solid rgba($primary-color-highlight, 0.1);
+    .material-icons {
+      font-size: 1.4rem;
+      color: rgba($primary-color-dark, 0.5);
+      margin-right: 4px;
+    }
+  }
+
+  @import "_code-highlight";
+  @import "_article-nav";
+}

@@ -1,0 +1,16 @@
+.article-nav {
+  margin-bottom: 0;
+  text-align: center;
+  .article-nav-title {
+    span {
+      position: relative;
+      top: -6px;
+    }
+  }
+  .post-prev {
+    text-align: left;
+  }
+  .post-next {
+    text-align: right;
+  }
+}

@@ -1,0 +1,29 @@
+.article {
+  .article-meta {
+    .published-date,
+    .post-author,
+    .article-category,
+    .reading-time, .pageviews {
+      a, span {
+        position: relative;
+        top: -4px;
+        color: $primary-color-highlight;
+      }
+    }
+    .reading-time {
+      span {
+        color: $primary-color-highlight;
+      }
+    }
+  }
+}
+
+.article.card {
+  margin-bottom: 16px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@import "_home-posts";
+@import "_blog-posts";
