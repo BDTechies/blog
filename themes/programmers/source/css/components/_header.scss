@@ -7,15 +7,15 @@
 
   .mdl-layout-title {
     padding-left: 0;
+
     #logo-wrap {
-      margin: 0;
-      margin-bottom: 8px;
+      margin: 0 0 8px;
     }
+
     #subtitle-wrap {
       font-size: 1.4rem;
       color: $primary-color-light;
-      margin: 0;
-      margin-bottom: 16px;
+      margin: 0 0 16px;
     }
   }
 
@@ -40,10 +40,16 @@
     }
   }
 }
-
- @media all and (min-width: 0) and (max-width: 1024px) and (orientation: landscape) {
-   .mdl-layout__drawer {
-     background: rgba($primary-color-dark, 0.9);
-     padding-right: 24px;
-   }
- }
+@media all and (min-width: 0) and (max-width: 1024px) {
+  .mdl-layout__drawer {
+    background: rgba($primary-color-dark, 0.9);
+    padding-right: 24px;
+    padding-top: 30px;
+  }
+  .mdl-layout__drawer-button {
+    color: $primary-color-highlight;
+    &:focus {
+      outline: none;
+    }
+  }
+}

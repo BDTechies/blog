@@ -35,3 +35,9 @@
   }
   @import "_article";
 }
+
+@media all and (min-width: 0) and (max-width: 1024px) {
+  .mdl-layout__content {
+    padding-top: 0;
+  }
+}

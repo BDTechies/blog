@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <%- partial('google-analytics') %>
-    <%
+  <%
   var title = page.title;
 
   if (is_archive()){
@@ -21,30 +21,28 @@
     title = __('tag') + ': ' + page.tag;
   }
   %>
-      <title>
-        <%= config.title %>
-          <% if (title){ %>
-            |
-            <%= title %>
-              <% } else { %>
-                |
-                <%= config.subtitle %>
-                  <% } %>
-      </title>
-      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-      <%- open_graph({twitter_id: theme.twitter, google_plus: theme.google_plus, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id}) %>
-        <% if (theme.rss){ %>
-          <link rel="alternate" href="<%= url_for(theme.rss) %>" title="<%= config.title %>" type="application/atom+xml">
-          <% } %>
-            <% if (theme.favicon){ %>
-              <link rel="icon" href="<%- theme.favicon %>">
-              <% } %>
-                <% if (config.highlight.enable){ %>
-                  <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-                  <% } %>
-                    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-                    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-                    <%- css('css/material.min.css') %>
-                    <%- css('css/prism.css') %>
-                      <%- css('css/style') %>
+  <title>
+    <%= config.title %>
+    <% if (title){ %>
+      | <%= title %>
+    <% } else { %>
+      | <%= config.subtitle %>
+    <% } %>
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <%- open_graph({twitter_id: theme.twitter, google_plus: theme.google_plus, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id}) %>
+  <% if (theme.rss){ %>
+  <link rel="alternate" href="<%= url_for(theme.rss) %>" title="<%= config.title %>" type="application/atom+xml">
+  <% } %>
+  <% if (theme.favicon){ %>
+      <link rel="icon" href="<%- theme.favicon %>">
+  <% } %>
+  <% if (config.highlight.enable){ %>
+      <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <% } %>
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <%- css('css/material.min.css') %>
+  <%- css('css/prism.css') %>
+  <%- css('css/style') %>
 </head>

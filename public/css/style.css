@@ -54,13 +54,11 @@ h6 {
   .mdl-layout__drawer .mdl-layout-title {
     padding-left: 0; }
     .mdl-layout__drawer .mdl-layout-title #logo-wrap {
-      margin: 0;
-      margin-bottom: 8px; }
+      margin: 0 0 8px; }
     .mdl-layout__drawer .mdl-layout-title #subtitle-wrap {
       font-size: 1.4rem;
       color: #fafafa;
-      margin: 0;
-      margin-bottom: 16px; }
+      margin: 0 0 16px; }
   .mdl-layout__drawer .mdl-navigation {
     padding-top: 0; }
     .mdl-layout__drawer .mdl-navigation .mdl-navigation__link {
@@ -75,10 +73,11 @@ h6 {
         padding-bottom: 4px;
         padding-left: 32px; }
 
-@media all and (min-width: 0) and (max-width: 1024px) and (orientation: landscape) {
+@media all and (min-width: 0) and (max-width: 1024px) {
   .mdl-layout__drawer {
     background: rgba(27, 43, 52, 0.9);
-    padding-right: 24px; } }
+    padding-right: 24px;
+    padding-top: 0; } }
 
 .mdl-layout__content {
   padding-top: 100px; }
@@ -189,6 +188,10 @@ h6 {
     text-align: left; }
   .main-container .article.article-blog .article-nav .post-next {
     text-align: right; }
+
+@media all and (min-width: 0) and (max-width: 1024px) {
+  .mdl-layout__content {
+    padding-top: 0; } }
 
 #footer p {
   margin: 0;
