@@ -31,6 +31,8 @@
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <%- open_graph({twitter_id: theme.twitter, google_plus: theme.google_plus, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id}) %>
+  <meta property="og:image" content="http://prozuktischool.com/css/img/bg.dark.jpg" />
+  <meta property="og:description" content=" বাংলায় প্রোগ্রামিং ও প্রযুক্তি বিষয়ক ব্লগ" />
   <% if (theme.rss){ %>
   <link rel="alternate" href="<%= url_for(theme.rss) %>" title="<%= config.title %>" type="application/atom+xml">
   <% } %>
