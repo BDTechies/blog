@@ -181,7 +181,9 @@ h6 {
 
 .main-container .article.article-blog .article-entry {
   margin-top: 16px;
-  text-align: justify; }
+  text-align: justify;
+  padding: 0 16px;
+  font-size: 3rem; }
   .main-container .article.article-blog .article-entry h3 {
     margin: 0; }
   .main-container .article.article-blog .article-entry pre {

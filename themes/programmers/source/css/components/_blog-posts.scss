@@ -1,4 +1,7 @@
 .article.article-blog {
+  @media screen and (min-width: 992px) {
+    padding: 32px;
+  }
   .article-header {
     h1 {
       margin: 0;
@@ -25,6 +28,12 @@
     text-align: justify;
     h3 {
       margin: 0;
+    }
+    @media screen and (min-width: 668px){
+      p {
+        font-size: 1.3rem;
+        line-height: 2.2rem;
+      }
     }
     @import "_code-highlight";
   }
