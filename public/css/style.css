@@ -162,6 +162,10 @@ h6 {
     color: rgba(27, 43, 52, 0.5);
     margin-right: 4px; }
 
+@media screen and (min-width: 992px) {
+  .main-container .article.article-blog {
+    padding: 32px; } }
+
 .main-container .article.article-blog .article-header h1 {
   margin: 0;
   padding: 0;
@@ -181,11 +185,13 @@ h6 {
 
 .main-container .article.article-blog .article-entry {
   margin-top: 16px;
-  text-align: justify;
-  padding: 0 16px;
-  font-size: 3rem; }
+  text-align: justify; }
   .main-container .article.article-blog .article-entry h3 {
     margin: 0; }
+  @media screen and (min-width: 668px) {
+    .main-container .article.article-blog .article-entry p {
+      font-size: 1.3rem;
+      line-height: 2.2rem; } }
   .main-container .article.article-blog .article-entry pre {
     border-radius: 3px; }
     .main-container .article.article-blog .article-entry pre code {
