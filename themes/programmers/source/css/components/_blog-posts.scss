@@ -27,7 +27,8 @@
     margin-top: 16px;
     text-align: justify;
     h3 {
-      margin: 0;
+      margin: 16px 0 0 0;
+      color: $primary-color-highlight;
     }
     @media screen and (min-width: 668px){
       p {
@@ -36,6 +37,18 @@
       }
     }
     @import "_code-highlight";
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-size: 1.1rem;
+      color: #e91e63;
+      li::before {
+        content: '↬';
+        margin: 0 8px;
+        color: $primary-color-dark;
+      }
+    }
   }
   @import "_article-nav";
 }

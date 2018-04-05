@@ -46,6 +46,12 @@ h6 {
   background-size: cover;
   background-attachment: fixed; }
 
+.highlight-text {
+  background: #eeeeee;
+  padding: 2px 8px;
+  border-radius: 2px;
+  color: #e91e63; }
+
 @media all and (min-width: 0) and (max-width: 480px) {
   .mdl-layout--fixed-drawer {
     background: #1B2B34; }
