@@ -48,7 +48,7 @@ ReactJS হোস্ট করার জন্যও গিটহাবের �
 
 <pre><code class="language-json">"homepage": "http://username.github.io/repo-name"</code></pre>
 
-<span class="highlight-text">scriptspackage.json</span> ফাইলটি অনেকটা এরকম দেখাবে:
+<span class="highlight-text">package.json</span> ফাইলটি অনেকটা এরকম দেখাবে:
 
 <pre><code class="language-json">{
   "name": "my-awesome-website",
