@@ -44,7 +44,7 @@ ReactJS হোস্ট করার জন্যও গিটহাবের �
 <pre><code class="language-bash">"predeploy": "npm run build",
 "deploy": "gh-pages -d build"</code></pre>
 
-একই ফাইলের শেষ <span class="highlight-text">scripts}</span>-টির আগে নিচের লাইনটি যোগ করুন:
+একই ফাইলের শেষ <span class="highlight-text">}</span>-টির আগে নিচের লাইনটি যোগ করুন:
 
 <pre><code class="language-json">"homepage": "http://username.github.io/repo-name"</code></pre>
 
