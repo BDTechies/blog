@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129538625-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-129538625-1');
+  </script>
+<!-- End Google Analytics -->
+
+
+  
+  <title>
+    প্রযুক্তি স্কুল
+    
+      | জাভাস্ক্রিপ্ট শিখি - পর্ব ০২ - Development Environment সেট আপ করা
+    
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="আসসালামু আলাইকুম। আমি শহীদ, প্রযুক্তি স্কুলের পক্ষ থেকে আপনাদের সবাইকে জানাই স্বাগতম। গত পর্বে আমরা জেনেছিলাম জাভাস্ক্রিপ্ট সম্পর্কে কিছু মৌলিক তথ্য। এ পর্বে আমরা জানার চেষ্টা করবো কীভাবে একটি জাভাস্ক">
+<meta name="keywords" content="javascript,জাভাস্ক্রিপ্ট,প্রোগ্রামিং">
+<meta property="og:type" content="article">
+<meta property="og:title" content="জাভাস্ক্রিপ্ট শিখি - পর্ব ০২ - Development Environment সেট আপ করা">
+<meta property="og:url" content="http://prozuktischool.com/2018/11/21/জাভাস্ক্রিপ্ট-শিখি-পর্ব-০২/index.html">
+<meta property="og:site_name" content="প্রযুক্তি স্কুল">
+<meta property="og:description" content="আসসালামু আলাইকুম। আমি শহীদ, প্রযুক্তি স্কুলের পক্ষ থেকে আপনাদের সবাইকে জানাই স্বাগতম। গত পর্বে আমরা জেনেছিলাম জাভাস্ক্রিপ্ট সম্পর্কে কিছু মৌলিক তথ্য। এ পর্বে আমরা জানার চেষ্টা করবো কীভাবে একটি জাভাস্ক">
+<meta property="og:locale" content="bn">
+<meta property="og:image" content="https://cdn.staticaly.com/gh/bdTechies/prozuktischool-cdn/39eebc8b7396da59f3cbcc37b739169b37567beb/images/ps-node-windows.jpg">
+<meta property="og:image" content="https://cdn.staticaly.com/gh/bdTechies/prozuktischool-cdn/e35a2d1e6edd5ccd10ba99710f262f30f1edf1e3/images/ps-node-linux.png">
+<meta property="og:updated_time" content="2018-11-21T04:24:54.592Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="জাভাস্ক্রিপ্ট শিখি - পর্ব ০২ - Development Environment সেট আপ করা">
+<meta name="twitter:description" content="আসসালামু আলাইকুম। আমি শহীদ, প্রযুক্তি স্কুলের পক্ষ থেকে আপনাদের সবাইকে জানাই স্বাগতম। গত পর্বে আমরা জেনেছিলাম জাভাস্ক্রিপ্ট সম্পর্কে কিছু মৌলিক তথ্য। এ পর্বে আমরা জানার চেষ্টা করবো কীভাবে একটি জাভাস্ক">
+<meta name="twitter:image" content="https://cdn.staticaly.com/gh/bdTechies/prozuktischool-cdn/39eebc8b7396da59f3cbcc37b739169b37567beb/images/ps-node-windows.jpg">
+  <meta property="og:image" content="http://prozuktischool.com/css/img/bg.dark.jpg" />
+  <meta property="og:description" content=" বাংলায় প্রোগ্রামিং ও প্রযুক্তি বিষয়ক ব্লগ" />
+  
+  <link rel="alternate" href="/atom.xml" title="প্রযুক্তি স্কুল" type="application/atom+xml">
+  
+  
+      <link rel="icon" href="/favicon.png">
+  
+  
+      <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="/css/material.min.css">
+  <link rel="stylesheet" href="/css/prism.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+  <body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
+      <div class="mdl-layout__drawer">
+  <span class="mdl-layout-title">
+    <h1 id="logo-wrap">
+      <a href="/" id="logo">প্রযুক্তি স্কুল</a>
+    </h1>
+    
+      <h3 id="subtitle-wrap">
+        <span>শিখতে চাই, তাই শেখাই :)</span>
+      </h3>
+    
+  </span>
+  <nav class="mdl-navigation">
+    
+      <a class="mdl-navigation__link" href="/">
+        <span>নীড়পাতা</span>
+      </a>
+    
+      <a class="mdl-navigation__link" href="/archives">
+        <span>সংগ্রহশালা</span>
+      </a>
+    
+  </nav>
+</div>
+
+
+      <main class="mdl-layout__content">
+        <div class="mdl-grid main-wrapper">
+          <div class="mdl-layout-spacer"></div>
+          <div class="mdl-cell mdl-cell--10-col main-container">
+            
+            <div class="mdl-grid mdl-grid--nesting">
+              <div class="mdl-cell mdl-cell--12-col">
+                
+  <article id="post-জাভাস্ক্রিপ্ট-শিখি-পর্ব-০২" class="article article-blog card" itemscope itemprop="blogPost">
+  <div class="article-header">
+    
+    
+        
+  
+    <h1 class="article-title" itemprop="name">
+      জাভাস্ক্রিপ্ট শিখি - পর্ব ০২ - Development Environment সেট আপ করা
+    </h1>
+  
+
+
+    
+  </div>
+  <div class="mdl-grid mdl-grid--nesting article-meta">
+    <div class="mdl-cell--3-col">
+      <span class="post-author">
+  <i class="material-icons">account_box</i>
+  <a href="/2018/11/21/জাভাস্ক্রিপ্ট-শিখি-পর্ব-০২/" class="author-name">
+    শহীদুল ইসলাম মজুমদার
+  </a>
+</span>
+
+    </div>
+    <div class="mdl-cell--3-col">
+      <span class="published-date">
+  <i class="material-icons">date_range</i>
+  <a href="/2018/11/21/জাভাস্ক্রিপ্ট-শিখি-পর্ব-০২/" class="article-date">
+    <time datetime="2018-11-21T04:18:48.000Z" itemprop="datePublished">২১/১১/২০১৮</time>
+  </a>
+</span>
+
+    </div>
+    <div class="mdl-cell--3-col">
+      <span class="reading-time">
+  <i class="material-icons">watch_later</i>
+  <span>
+    ২ মিনিট দীর্ঘ
+  </span>
+</span>
+
+    </div>
+    <div class="mdl-cell--3-col">
+      <span class="pageviews">
+  <i class="material-icons">pageview</i>
+  <span id="pageviews">
+    <font class="count">--</font> বার পঠিত
+  </span>
+</span>
+
+    </div>
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>আসসালামু আলাইকুম। আমি শহীদ, প্রযুক্তি স্কুলের পক্ষ থেকে আপনাদের সবাইকে জানাই স্বাগতম।</p>
+<p>গত পর্বে আমরা জেনেছিলাম জাভাস্ক্রিপ্ট সম্পর্কে কিছু মৌলিক তথ্য। এ পর্বে আমরা জানার চেষ্টা করবো কীভাবে একটি জাভাস্ক্রিপ্ট Dev Environment সেট আপ করা যায়।</p>
+<h3 id="উইন্ডোজ"><a href="#উইন্ডোজ" class="headerlink" title="উইন্ডোজ"></a>উইন্ডোজ</h3><p>১। প্রথমেই <a href="https://atom.io" target="_blank" rel="noopener">https://atom.io</a> অথবা <a href="https://code.visualstudio.com/" target="_blank" rel="noopener">https://code.visualstudio.com</a> ওয়েব সাইটে গিয়ে Atom অথবা VS Code এর মধ্যে যে কোনো একটি টেক্সট এডিটর ডাউনলোড করে ইন্সটল করে নিন। ডেক্সটপ বা টাস্কবারে Atom এডিটরের একটি শটকার্ট তৈরি করুন যাতে পরবর্তীতে সহজে খুঁজে পেতে পারেন।</p>
+<p>২। এরপর <a href="https://nodejs.org" target="_blank" rel="noopener">https://nodejs.org</a> থেকে Node ডাউনলোড করে ইন্সটল করে নিন। Node ঠিকভাবে ইন্সটল হয়েছে কিনা তা চেক করার জন্য কমান্ড লাইন চালু করুন (প্রোগ্রামিং করার জন্য কমান্ড লাইন টুলের বেসিক জ্ঞান থাকাটা জরুরি। আশা করি নিজ উদ্যোগে কিছুটা শিখে নিবেন।)। কমান্ড লাইনে কোনো সফ্টওয়্যার চালানোর উপায় হলো সফ্টওয়্যারটির নাম লিখে <code>Enter</code> বাটনে প্রেস করা। কমান্ড লাইনে লিখুন:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure>
+<p>নিচের ছবির মতো কিছু একটা আসলে বুঝতে হবে নোড ঠিকভাবে ইন্সটল হয়েছে।</p>
+<p><img src="https://cdn.staticaly.com/gh/bdTechies/prozuktischool-cdn/39eebc8b7396da59f3cbcc37b739169b37567beb/images/ps-node-windows.jpg" alt="nodejs installation check"></p>
+<h3 id="লিনাক্স"><a href="#লিনাক্স" class="headerlink" title="লিনাক্স"></a>লিনাক্স</h3><p>যেহেতু লিনাক্স চালাচ্ছেন তাই আমি ধরেই নিচ্ছি টার্মিনাল থেকে কীভাবে সফ্টওয়্যার ইন্সটল করা যায় তা আপনার জানা। আপনার লিনাক্স কম্পিউটারে নোড ইন্সটল করার জন্য নিচের ধাপগুলো অনুসরণ করুন:</p>
+<p>১। nvm (Node Version Manager) ইন্সটল করার জন্য নিচের কমান্ডটি রান করুন।</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash</span><br></pre></td></tr></table></figure>
+<p>২। nvm ইন্সটল হয়েছে কিনা তা দেখার জন্য নিচের কমান্ডটি রান করুন।</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">command</span> -v nvm</span><br></pre></td></tr></table></figure>
+<p>যদি <code>nvm: command not found</code> লেখাটি দেখায় তবে বুঝতে হবে nvm ঠিকভাবে ইন্সটল হয়নি। সমস্যাটি সমাধানের জন্য <a href="https://github.com/creationix/nvm" target="_blank" rel="noopener">এখানে</a> দেখুন।</p>
+<p>৩। নোডের সর্বশেষ সংস্করনটি ইন্সটল করার জন্য নিচের কমান্ডটি লিখে <code>Enter</code> দিন।</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nvm install node</span><br></pre></td></tr></table></figure>
+<p>৪। Node ঠিকভাবে ইন্সটল হয়েছে কিনা তা চেক করার জন্য কমান্ড লাইনে লিখুন:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure>
+<p>নিচের ছবির মতো কিছু একটা আসলে বুঝতে হবে নোড ঠিকভাবে ইন্সটল হয়েছে।</p>
+<p><img src="https://cdn.staticaly.com/gh/bdTechies/prozuktischool-cdn/e35a2d1e6edd5ccd10ba99710f262f30f1edf1e3/images/ps-node-linux.png" alt="nodejs installation check"></p>
+<p><strong>বি: দ্র:</strong> পরবর্তী টিউটোরিয়ালগুলোতে আমি কেবল লিনাক্স টার্মিনালের ছবি দিবো। দেখতে উইন্ডোজের সাথে না মিললেও আউটপুট এক হলেই চলবে।</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <div class="mdl-grid mdl-grid--nesting article-meta">
+        <div class="mdl-cell--6-col">
+          
+  <span class="article-category">
+    <i class="material-icons">style</i>
+    <a class="article-category-link" href="/category/প্রোগ্রামিং/">প্রোগ্রামিং</a>
+  </span>
+
+
+        </div>
+      </div>
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  <div class="mdl-grid mdl-grid--nesting article-nav">
+  
+    <div class="mdl-cell--6-col">
+    <a href="/2018/04/05/hosting-website-and-react-app-on-github/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title post-prev"><i class="material-icons">arrow_back</i> <span> গিট ও গিটহাব -  গিটহাব-এ (স্ট্যাটিক) ওয়েবসাইট হোস্ট </span></div>
+    </a>
+    </div>
+  
+  
+  </div>
+</nav>
+
+
+  
+</article>
+
+
+<div class="mdl-grid post-comment">
+  <div class="mdl-cell--12-col">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+  </div>
+</div>
+
+
+
+
+              </div>
+            </div>
+            <div class="mdl-grid mdl-grid--nesting">
+              <div class="mdl-cell mdl-cell--12-col mdl-shadow--2dp card">
+                <footer id="footer">
+  <p>
+    <span>
+      &copy; ২০১৮ <a href="http://prozuktischool.com">প্রযুক্তি স্কুল</a>
+    </span>
+    <span class="powered-by hidden-mobile">
+      সহযোগিতায়  <a href="http://hexo.io/" target="_blank">Hexo</a> & <a href="http://bdtechies.com">bdTechies</a>
+    </span>
+  </p>
+</footer>
+
+              </div>
+            </div>
+          </div>
+          <div class="mdl-layout-spacer"></div>
+          
+<script>
+  var disqus_shortname = 'prozuktischool';
+  
+  var disqus_url = 'http://prozuktischool.com/2018/11/21/জাভাস্ক্রিপ্ট-শিখি-পর্ব-০২/';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+<script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="/js/prism.js"></script>
+<script src="/js/script.js"></script>
+
+
+
+        </div>
+      </main>
+    </div>
+
+  </body>
+
+  </html>
