@@ -97,6 +97,10 @@ h6 {
     .mdl-layout__drawer-button:focus {
       outline: none; } }
 
+* img {
+  width: 100%;
+  height: auto; }
+
 .mdl-layout__content {
   padding-top: 100px; }
 
