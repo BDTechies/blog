@@ -34,7 +34,7 @@
 <meta property="og:locale" content="bn">
 <meta property="og:image" content="https://cdn.staticaly.com/gh/bdTechies/prozuktischool-cdn/39eebc8b7396da59f3cbcc37b739169b37567beb/images/ps-node-windows.jpg">
 <meta property="og:image" content="https://cdn.staticaly.com/gh/bdTechies/prozuktischool-cdn/e35a2d1e6edd5ccd10ba99710f262f30f1edf1e3/images/ps-node-linux.png">
-<meta property="og:updated_time" content="2018-11-21T04:35:28.828Z">
+<meta property="og:updated_time" content="2018-11-22T03:55:13.353Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="জাভাস্ক্রিপ্ট শিখি - পর্ব ০২ - Development Environment সেট আপ করা">
 <meta name="twitter:description" content="আসসালামু আলাইকুম। আমি শহীদ, প্রযুক্তি স্কুলের পক্ষ থেকে আপনাদের সবাইকে জানাই স্বাগতম। গত পর্বে আমরা জেনেছিলাম জাভাস্ক্রিপ্ট সম্পর্কে কিছু মৌলিক তথ্য। এ পর্বে আমরা জানার চেষ্টা করবো কীভাবে একটি জাভাস্ক">
@@ -151,7 +151,7 @@
         <p>আসসালামু আলাইকুম। আমি শহীদ, প্রযুক্তি স্কুলের পক্ষ থেকে আপনাদের সবাইকে জানাই স্বাগতম।</p>
 <p>গত পর্বে আমরা জেনেছিলাম জাভাস্ক্রিপ্ট সম্পর্কে কিছু মৌলিক তথ্য। এ পর্বে আমরা জানার চেষ্টা করবো কীভাবে একটি জাভাস্ক্রিপ্ট Dev Environment সেট আপ করা যায়।</p>
 <h3 id="উইন্ডোজ"><a href="#উইন্ডোজ" class="headerlink" title="উইন্ডোজ"></a>উইন্ডোজ</h3><p>১। প্রথমেই <a href="https://atom.io" target="_blank" rel="noopener">https://atom.io</a> অথবা <a href="https://code.visualstudio.com/" target="_blank" rel="noopener">https://code.visualstudio.com</a> ওয়েব সাইটে গিয়ে Atom অথবা VS Code এর মধ্যে যে কোনো একটি টেক্সট এডিটর ডাউনলোড করে ইন্সটল করে নিন। ডেক্সটপ বা টাস্কবারে Atom এডিটরের একটি শটকার্ট তৈরি করুন যাতে পরবর্তীতে সহজে খুঁজে পেতে পারেন।</p>
-<p>২। এরপর <a href="https://nodejs.org" target="_blank" rel="noopener">https://nodejs.org</a> থেকে Node ডাউনলোড করে ইন্সটল করে নিন। Node ঠিকভাবে ইন্সটল হয়েছে কিনা তা চেক করার জন্য কমান্ড লাইন চালু করুন (প্রোগ্রামিং করার জন্য কমান্ড লাইন টুলের বেসিক জ্ঞান থাকাটা জরুরি। আশা করি নিজ উদ্যোগে কিছুটা শিখে নিবেন।)। কমান্ড লাইনে কোনো সফ্টওয়্যার চালানোর উপায় হলো সফ্টওয়্যারটির নাম লিখে <code>Enter</code> বাটনে প্রেস করা। কমান্ড লাইনে লিখুন:</p>
+<p>২। এরপর <a href="https://nodejs.org" target="_blank" rel="noopener">https://nodejs.org</a> থেকে Node ডাউনলোড করে ইন্সটল করে নিন। Node ঠিকভাবে ইন্সটল হয়েছে কিনা তা চেক করার জন্য কমান্ড লাইন চালু করুন (প্রোগ্রামিং করার জন্য কমান্ড লাইন টুলের বেসিক জ্ঞান থাকাটা জরুরি। আশা করি নিজ উদ্যোগে কিছুটা শিখে নিবেন।)। কমান্ড লাইনে কোনো সফ্টওয়্যার চালানোর উপায় হলো সফ্টওয়্যারটির নাম লিখে <span class="highlight-text">Enter</span> বাটনে প্রেস করা। কমান্ড লাইনে লিখুন:</p>
 <pre><code class="language-bash">> node -v</code></pre>
 
 <p>নিচের ছবির মতো কিছু একটা আসলে বুঝতে হবে নোড ঠিকভাবে ইন্সটল হয়েছে।</p>
@@ -163,8 +163,8 @@
 <p>২। nvm ইন্সটল হয়েছে কিনা তা দেখার জন্য নিচের কমান্ডটি রান করুন।</p>
 <pre><code class="language-bash">$ command -v nvm</code></pre>
 
-<p>যদি <code>nvm: command not found</code> লেখাটি দেখায় তবে বুঝতে হবে nvm ঠিকভাবে ইন্সটল হয়নি। সমস্যাটি সমাধানের জন্য <a href="https://github.com/creationix/nvm" target="_blank" rel="noopener">এখানে</a> দেখুন।</p>
-<p>৩। নোডের সর্বশেষ সংস্করনটি ইন্সটল করার জন্য নিচের কমান্ডটি লিখে <code>Enter</code> দিন।</p>
+<p>যদি <span class="highlight-text">nvm: command not found</span> লেখাটি দেখায় তবে বুঝতে হবে nvm ঠিকভাবে ইন্সটল হয়নি। সমস্যাটি সমাধানের জন্য <a href="https://github.com/creationix/nvm" target="_blank" rel="noopener">এখানে</a> দেখুন।</p>
+<p>৩। নোডের সর্বশেষ সংস্করনটি ইন্সটল করার জন্য নিচের কমান্ডটি লিখে <span class="highlight-text">Enter</span> দিন।</p>
 <pre><code class="language-bash">$ nvm install node</code></pre>
 
 <p>৪। Node ঠিকভাবে ইন্সটল হয়েছে কিনা তা চেক করার জন্য কমান্ড লাইনে লিখুন:</p>
